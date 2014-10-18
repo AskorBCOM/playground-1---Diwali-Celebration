@@ -64,6 +64,7 @@ html{
   position: absolute;
   right: 20px;
   top: 0px;
+
 }
 #lamp img{
   width: 90px;
@@ -74,6 +75,8 @@ html{
   position: absolute;
   left: 0px;
   bottom: 0px;
+    background: rgba(255, 255, 255, 0.33);
+  padding: 10px;
 }
 /* Chrome, Safari, Opera */
 
@@ -606,4 +609,25 @@ color:#ffffff;
     font-size:3.5em;
   }
 
+}
+.pace {
+  -webkit-pointer-events: none;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.pace .pace-progress {
+  background-color: rgba(0, 0, 0, 0.19999999999999996);
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  -webkit-transition: width 1s;
+  -moz-transition: width 1s;
+  -o-transition: width 1s;
+  transition: width 1s;
 }
